@@ -6,7 +6,7 @@ interface User {
   username: string
 }
 
-interface Post {
+interface Article {
   id: string
   title: string
   body: string
@@ -17,7 +17,13 @@ interface Post {
   author: User
 }
 
-export async function getAllPosts(): Promise<Post[]> {
-  const response = await api.get("/posts")
+interface Response {
+  data: Article[]
+  error: null | Error
+  message: string
+}
+
+export async function getAllArticles(): Promise<Response> {
+  const response = await api.get("/articles")
   return response.data
 }

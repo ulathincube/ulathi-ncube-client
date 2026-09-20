@@ -1,3 +1,3 @@
-# React with Typescript Boilerplate
+# Ulathi Ncube Client
 
-This is my starter React Boilerplate project, using Typescript.
+This is my Client side code for the blog.
