@@ -6,8 +6,12 @@
   --font-size-large: 2rem;
   --link-color: hsl(220deg 100% 40%);
   --link-color-active: hsl(220deg 100% 50%);
+  --skeleton-color: hsl(220deg 5% 85%);
+  --skeleton-color-2: hsl(220deg 5% 95%);
+  --border-radius-5: 5px;
   --spacing-5: 5px;
   --spacing-10: 10px;
+  --spacing-15: 15px;
 }
 
 html,

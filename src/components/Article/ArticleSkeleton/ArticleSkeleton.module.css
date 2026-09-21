@@ -1,0 +1,32 @@
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-10);
+  flex: 1;
+}
+
+.title,
+.body {
+  min-width: 100%;
+  animation: flicker 1000ms ease-in-out infinite alternate both;
+  border-radius: var(--border-radius-5);
+}
+
+.title {
+  flex: 1;
+}
+
+.body {
+  flex: 3;
+  min-height: 150px;
+}
+
+@keyframes flicker {
+  from {
+    background-color: var(--skeleton-color);
+  }
+
+  to {
+    background-color: var(--skeleton-color-2);
+  }
+}

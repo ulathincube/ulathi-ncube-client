@@ -2,6 +2,7 @@ import styles from "./Articles.module.css"
 import Article from "../Article"
 import { getAllArticles } from "../../services/article"
 import { useQuery } from "@tanstack/react-query"
+import ArticlesSkeleton from "./ArticlesSkeleton"
 
 function Articles() {
   const { isPending, isError, error, data } = useQuery({
@@ -9,7 +10,7 @@ function Articles() {
     queryFn: getAllArticles,
   })
 
-  if (isPending) return <div>...Loading...</div>
+  if (isPending) return <ArticlesSkeleton />
   if (isError) return <div>{error.message}</div>
 
   return (
