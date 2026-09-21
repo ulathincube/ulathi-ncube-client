@@ -1,0 +1,38 @@
+.wrapper {
+  max-width: 25%;
+}
+
+.wrapper,
+.form,
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-10);
+}
+
+.group {
+  gap: var(--spacing-5);
+}
+
+.title {
+  font-size: var(--font-size-medium);
+}
+
+.form {
+  width: 100%;
+}
+
+.field {
+  border: 2px solid var(--skeleton-color);
+  padding: var(--spacing-10);
+}
+
+.field,
+.submit {
+  border-radius: var(--border-radius-5);
+}
+
+.submit {
+  border: none;
+  padding: var(--spacing-10) var(--spacing-15);
+}
