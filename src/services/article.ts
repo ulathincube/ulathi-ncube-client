@@ -8,6 +8,7 @@ interface User {
 
 interface Article {
   id: string
+  intro: string
   title: string
   body: string
   published: boolean

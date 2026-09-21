@@ -1,9 +1,33 @@
 .article {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-5);
 }
 
 .title {
   font-weight: var(--font-weight-light-bold);
+}
+
+.container {
+  display: flex;
+  gap: var(--spacing-5);
+  width: fit-content;
+  background-color: black;
+}
+
+.link {
+  display: flex;
+  width: fit-content;
+  gap: var(--spacing-5);
+  font-weight: var(--font-weight-light-bold);
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.link:hover,
+.link:active {
+  color: var(--link-color-active);
 }

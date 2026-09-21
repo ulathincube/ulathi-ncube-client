@@ -21,6 +21,9 @@ function Articles() {
           <Article key={article.id} article={article} />
         ))}
       </ul>
+      <article className={styles.box}>
+        <button className={styles.fetch}>Show More</button>
+      </article>
     </section>
   )
 }

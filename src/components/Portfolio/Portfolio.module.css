@@ -18,6 +18,12 @@
   font-size: var(--font-size-medium);
 }
 
+.link {
+  display: flex;
+  gap: var(--spacing-5);
+  width: fit-content;
+}
+
 .link:link,
 .link:visited {
   color: var(--link-color);
