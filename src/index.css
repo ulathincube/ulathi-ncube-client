@@ -1,6 +1,8 @@
 :root {
-  --font-stack: 'Reddit Sans', 'Arial', 'Helvetica', sans-serif;
+  --font-stack: "Reddit Sans", "Arial", "Helvetica", sans-serif;
   --font-size-default: 1rem;
+  --font-weight-normal: 400;
+  --font-size-large: 2rem;
 }
 
 html,
@@ -15,4 +17,19 @@ body {
 
 #root {
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+/*  -- Heading reset -- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-size-default);
 }
