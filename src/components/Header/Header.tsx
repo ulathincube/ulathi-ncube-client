@@ -13,6 +13,11 @@ function Header() {
               Blog
             </Link>
           </li>
+          <li className={styles.item}>
+            <Link className={styles.link} to="/portfolio">
+              Portfolio
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

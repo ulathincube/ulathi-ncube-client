@@ -1,19 +1,16 @@
-import Hero from "../../components/Hero"
+import styles from "./Portfolio.module.css"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import Projects from "../../components/Projects"
-import ContactForm from "../../components/ContactForm"
 
-function Home() {
+function Portfolio() {
   return (
     <>
       <Header />
-      <Hero />
       <Projects />
-      <ContactForm />
       <Footer />
     </>
   )
 }
 
-export default Home
+export default Portfolio

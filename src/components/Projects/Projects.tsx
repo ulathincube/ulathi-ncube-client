@@ -1,4 +1,4 @@
-import styles from "./Portfolio.module.css"
+import styles from "./Projects.module.css"
 import { Link } from "react-router"
 
 interface ProjectProps {
@@ -7,7 +7,7 @@ interface ProjectProps {
   link: string
 }
 
-function PortfolioProject({ name, bio, link }: ProjectProps) {
+function Project({ name, bio, link }: ProjectProps) {
   return (
     <li className={styles.project}>
       <article className={styles.details}>
@@ -40,24 +40,24 @@ function PortfolioProject({ name, bio, link }: ProjectProps) {
   )
 }
 
-function Portfolio() {
+function Projects() {
   return (
     <section className={styles.portfolio}>
       <article className={styles.info}>
         <h3 className={styles.heading}>Portfolio</h3>
       </article>
       <ul className={styles.projects}>
-        <PortfolioProject
+        <Project
           name="Where's Waldo"
           bio="A board game that tasks the player to search for characters and record time"
           link="https://google.com"
         />
-        <PortfolioProject
+        <Project
           name="File Uploader"
           bio="A file upload service for storing files on an online storage service."
           link="https://google.com"
         />
-        <PortfolioProject
+        <Project
           name="Message-Me"
           bio="A simple messaging client for chatting with random users on the internet and find new friends"
           link="https://google.com"
@@ -67,4 +67,4 @@ function Portfolio() {
   )
 }
 
-export default Portfolio
+export default Projects

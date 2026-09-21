@@ -12,6 +12,8 @@
 .links {
   list-style: none;
   font-size: var(--font-size-medium);
+  display: flex;
+  gap: var(--spacing-15);
 }
 
 .link:link,
