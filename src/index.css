@@ -3,15 +3,18 @@
   --font-size-default: 1rem;
   --font-weight-normal: 400;
   --font-weight-light-bold: 500;
+  --font-size-medium: 1.3rem;
   --font-size-large: 2rem;
   --link-color: hsl(220deg 100% 40%);
   --link-color-active: hsl(220deg 100% 50%);
   --skeleton-color: hsl(220deg 5% 85%);
   --skeleton-color-2: hsl(220deg 5% 95%);
   --border-radius-5: 5px;
+  --spacing-3: 3px;
   --spacing-5: 5px;
   --spacing-10: 10px;
   --spacing-15: 15px;
+  --spacing-50: 50px;
 }
 
 html,
@@ -28,7 +31,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-10);
+  gap: var(--spacing-50);
   width: 100%;
   padding: var(--spacing-10);
 }

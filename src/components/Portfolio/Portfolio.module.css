@@ -1,0 +1,36 @@
+.portfolio,
+.projects,
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-10);
+}
+
+.projects {
+  list-style: none;
+}
+
+.heading {
+  font-size: var(--font-size-large);
+}
+
+.title {
+  font-weight: var(--font-weight-light-bold);
+  font-size: var(--font-size-medium);
+}
+
+.link:link,
+.link:visited {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+  text-decoration: underline;
+  color: var(--link-color-active);
+}
+
+.project {
+  gap: var(--spacing-3);
+}
