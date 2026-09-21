@@ -14,11 +14,14 @@ function Articles() {
   if (isError) return <div>{error.message}</div>
 
   return (
-    <ul className={styles.articles}>
-      {data.data.map((article) => (
-        <Article key={article.id} article={article} />
-      ))}
-    </ul>
+    <section className={styles.wrapper}>
+      <h1 className={styles.title}>Articles</h1>
+      <ul className={styles.articles}>
+        {data.data.map((article) => (
+          <Article key={article.id} article={article} />
+        ))}
+      </ul>
+    </section>
   )
 }
 
