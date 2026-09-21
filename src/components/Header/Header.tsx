@@ -1,10 +1,11 @@
 import styles from "./Header.module.css"
 import { Link } from "react-router"
+import Logo from "../Logo"
 
 function Header() {
   return (
     <header className={styles.header}>
-      <article className={styles.logo}>{`< Ulathi />`}</article>
+      <Logo />
       <nav className={styles.navigation}>
         <ul className={styles.links}>
           <li className={styles.item}>

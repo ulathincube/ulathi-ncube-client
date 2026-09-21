@@ -1,17 +1,3 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.navigation,
-.links {
-  display: flex;
-}
-
-.links {
-  list-style: none;
-}
-
 .link:link,
 .link:visited {
   color: inherit;
@@ -21,4 +7,8 @@
 .link:hover,
 .link:active {
   color: var(--link-color-active);
+}
+
+.logo {
+  font-weight: var(--font-weight-normal);
 }

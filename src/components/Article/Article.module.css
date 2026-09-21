@@ -1,0 +1,9 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.title {
+  font-weight: var(--font-weight-light-bold);
+}
