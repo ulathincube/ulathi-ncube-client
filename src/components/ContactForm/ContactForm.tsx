@@ -1,16 +1,48 @@
 import styles from "./ContactForm.module.css"
 import { useState } from "react"
+import { createClient } from "../../services/client"
 
 function ContactForm() {
+  const [name, setName] = useState<string>("")
+  const [email, setEmail] = useState<string>("")
+  const [message, setMessage] = useState<string>("")
+
+  const onNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setName(event.target.value)
+  }
+
+  const onEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value)
+  }
+
+  const onMessageChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setMessage(event.target.value)
+  }
+
+  const onFormSubmit = async (event: React.SubmitEvent<HTMLFormElement>) => {
+    event.preventDefault()
+
+    try {
+      const result = await createClient({ name, email, message })
+      console.log({ result })
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.log({ error })
+      }
+    }
+  }
+
   return (
     <section className={styles.wrapper}>
       <h5 className={styles.title}>Get in Touch</h5>
-      <form className={styles.form}>
+      <form onSubmit={onFormSubmit} className={styles.form}>
         <div className={styles.group}>
           <label htmlFor="name" className={styles.label}>
             Name
           </label>
           <input
+            value={name}
+            onChange={onNameChange}
             id="name"
             className={styles.field}
             type="text"
@@ -23,6 +55,8 @@ function ContactForm() {
             Email Address
           </label>
           <input
+            value={email}
+            onChange={onEmailChange}
             id="email"
             className={styles.field}
             type="email"
@@ -35,6 +69,8 @@ function ContactForm() {
             Message
           </label>
           <textarea
+            value={message}
+            onChange={onMessageChange}
             id="message"
             className={styles.field}
             placeholder="Hi! Are you available right now?"
