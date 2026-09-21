@@ -3,7 +3,7 @@
 .project {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-10);
+  gap: var(--spacing-15);
 }
 
 .projects {
@@ -15,7 +15,6 @@
 }
 
 .title {
-  font-weight: var(--font-weight-light-bold);
   font-size: var(--font-size-medium);
 }
 
@@ -23,14 +22,18 @@
 .link:visited {
   color: var(--link-color);
   text-decoration: none;
+  font-weight: var(--font-weight-light-bold);
 }
 
 .link:hover,
 .link:active {
-  text-decoration: underline;
   color: var(--link-color-active);
 }
 
 .project {
   gap: var(--spacing-3);
+  max-width: 25%;
+  /* border: 2px solid black; */
+  /* border-radius: var(--border-radius-10); */
+  /* padding: var(--spacing-10); */
 }
