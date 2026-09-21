@@ -5,11 +5,11 @@ import Footer from "../../components/Footer"
 
 function Blog() {
   return (
-    <div className={styles.wrapper}>
+    <>
       <Header />
       <Main />
       <Footer />
-    </div>
+    </>
   )
 }
 

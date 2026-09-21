@@ -3,6 +3,8 @@
   --font-size-default: 1rem;
   --font-weight-normal: 400;
   --font-size-large: 2rem;
+  --link-color: hsl(220deg 100% 40%);
+  --link-color-active: hsl(220deg 100% 50%);
 }
 
 html,

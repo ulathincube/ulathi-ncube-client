@@ -1,7 +1,28 @@
 .header {
   display: flex;
+  justify-content: space-between;
 }
 
 .logo {
   font-weight: var(--font-weight-normal);
+}
+
+.navigation,
+.links {
+  display: flex;
+}
+
+.links {
+  list-style: none;
+}
+
+.link:link,
+.link:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+  color: var(--link-color-active);
 }
