@@ -8,3 +8,7 @@
 .bio {
   max-width: 55ch;
 }
+
+.highlight {
+  /* color: var(--highlight); */
+}

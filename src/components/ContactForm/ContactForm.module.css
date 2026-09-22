@@ -12,7 +12,7 @@
 .form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-10);
+  gap: var(--spacing-15);
 }
 
 .group {
@@ -45,4 +45,8 @@
 .submit {
   border: none;
   padding: var(--spacing-10) var(--spacing-15);
+  display: flex;
+  gap: var(--spacing-5);
+  align-items: center;
+  font-weight: var(--font-weight-light-bold);
 }

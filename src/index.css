@@ -6,6 +6,7 @@
   --font-size-medium: 1.3rem;
   --font-size-large: 2rem;
   --link-color: hsl(220deg 100% 40%);
+  --highlight: hsl(220deg 100% 30%);
   --link-color-active: hsl(220deg 100% 50%);
   --skeleton-color: hsl(220deg 5% 85%);
   --skeleton-color-2: hsl(220deg 5% 95%);
