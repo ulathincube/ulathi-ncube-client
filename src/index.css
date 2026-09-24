@@ -4,7 +4,9 @@
   --font-weight-normal: 400;
   --font-weight-light-bold: 500;
   --font-size-medium: 1.3rem;
+  --font-size-medium-mobile: 1.1rem;
   --font-size-large: 2rem;
+  --font-size-large-mobile: 1.4rem;
   --link-color: hsl(220deg 100% 40%);
   --highlight: hsl(220deg 100% 30%);
   --link-color-active: hsl(220deg 100% 50%);
@@ -20,6 +22,14 @@
   --spacing-50: 50px;
   --animation-duration-enter: 750ms;
   --animation-duration-exit: 250ms;
+  --text-width: 55ch;
+
+  --body-color: hsl(220deg 15% 97%);
+  --text-color-main: hsl(220deg 20% 10%);
+  --text-color-normal: hsl(220deg 20% 25%);
+
+  --action-background: hsl(220deg 100% 35%);
+  --action-text-color: hsl(220deg 20% 95%);
 }
 
 html,
@@ -30,6 +40,8 @@ body {
 body {
   font-family: var(--font-stack);
   font-size: var(--font-size-default);
+  color: var(--text-color-normal);
+  background-color: var(--body-color);
 }
 
 #root {
@@ -49,4 +61,5 @@ h4,
 h5,
 h6 {
   font-weight: var(--font-size-default);
+  color: var(--text-color-main);
 }

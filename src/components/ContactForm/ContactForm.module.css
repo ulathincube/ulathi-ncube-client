@@ -25,10 +25,11 @@
 
 .title {
   font-size: var(--font-size-large);
+  min-width: 100%;
 }
 
 .form {
-  width: 100%;
+  max-width: 100%;
 }
 
 .field {
@@ -49,4 +50,18 @@
   gap: var(--spacing-5);
   align-items: center;
   font-weight: var(--font-weight-light-bold);
+  background-color: var(--action-background);
+  color: var(--action-text-color);
+}
+
+@media screen and (max-width: 50rem) {
+  .wrapper {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .form {
+    grid-template-columns: 1fr;
+  }
 }

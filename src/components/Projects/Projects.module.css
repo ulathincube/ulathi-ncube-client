@@ -8,6 +8,7 @@
 
 .projects {
   list-style: none;
+  max-width: var(--text-width);
 }
 
 .heading {
@@ -38,7 +39,7 @@
 
 .project {
   gap: var(--spacing-3);
-  max-width: 25%;
+
   /* border: 2px solid black; */
   /* border-radius: var(--border-radius-10); */
   /* padding: var(--spacing-10); */
