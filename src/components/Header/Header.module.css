@@ -29,3 +29,11 @@
   transition-duration: var(--animation-duration-exit);
   transition-timing-function: ease-in;
 }
+
+@media screen and (max-width: 50rem) {
+  .navigation {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}

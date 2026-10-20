@@ -1,6 +1,7 @@
 import styles from "./Header.module.css"
 import { Link } from "react-router"
 import Logo from "../Logo"
+import MenuIcon from "../MenuIcon"
 
 function Header() {
   return (
@@ -20,6 +21,7 @@ function Header() {
           </li>
         </ul>
       </nav>
+      <MenuIcon />
     </header>
   )
 }
