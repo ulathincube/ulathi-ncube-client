@@ -36,4 +36,8 @@
     visibility: hidden;
     pointer-events: none;
   }
+
+  .header {
+    align-items: center;
+  }
 }

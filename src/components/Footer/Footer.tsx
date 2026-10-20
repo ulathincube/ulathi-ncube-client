@@ -9,14 +9,34 @@ function Footer() {
       <nav className={styles.navigation}>
         <ul className={styles.links}>
           <li className={styles.item}>
-            <Link className={styles.link} to="/blog">
-              Blog
-            </Link>
+            <h3 className={styles.title}>Working on</h3>
+            <ul className={styles.list}>
+              <li className={styles.item}>
+                <Link to="/" className={styles.link}>
+                  Blog
+                </Link>
+              </li>
+              <li className={styles.item}>
+                <Link to="/" className={styles.link}>
+                  Portfolio
+                </Link>
+              </li>
+            </ul>
           </li>
           <li className={styles.item}>
-            <Link className={styles.link} to="/portfolio">
-              Portfolio
-            </Link>
+            <h3 className={styles.title}>General</h3>
+            <ul className={styles.list}>
+              <li className={styles.item}>
+                <Link to="/" className={styles.link}>
+                  About
+                </Link>
+              </li>
+              <li className={styles.item}>
+                <Link to="/" className={styles.link}>
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>

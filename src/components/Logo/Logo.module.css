@@ -1,3 +1,7 @@
+.link {
+  flex: 1;
+}
+
 .link:link,
 .link:visited {
   color: inherit;
