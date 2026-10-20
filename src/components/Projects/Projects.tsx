@@ -48,8 +48,8 @@ function Projects() {
       </article>
       <ul className={styles.projects}>
         <Project
-          name="Where's Waldo"
-          bio="A board game that tasks the player to search for characters and record time"
+          name="Odin Book"
+          bio="A social media application with instant messaging implemented using websockets"
           link="https://google.com"
         />
         <Project
