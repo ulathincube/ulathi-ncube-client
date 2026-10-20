@@ -3,7 +3,7 @@ import Articles from "../Articles/"
 
 function Main() {
   return (
-    <main className={styles.main}>
+    <main className={styles.wrapper}>
       <Articles />
     </main>
   )

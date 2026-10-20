@@ -3,6 +3,7 @@ import Article from "../Article"
 import { getAllArticles } from "../../services/article"
 import { useQuery } from "@tanstack/react-query"
 import ArticlesSkeleton from "./ArticlesSkeleton"
+import Error from "../Error"
 
 function Articles() {
   const { isPending, isError, error, data } = useQuery({
@@ -12,7 +13,7 @@ function Articles() {
   })
 
   if (isPending) return <ArticlesSkeleton />
-  if (isError) return <div>{error.message}</div>
+  if (isError) return <Error />
 
   return (
     <section className={styles.wrapper}>
