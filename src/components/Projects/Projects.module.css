@@ -44,3 +44,13 @@
   /* border-radius: var(--border-radius-10); */
   /* padding: var(--spacing-10); */
 }
+
+@media screen and (max-width: 50rem) {
+  .heading {
+    font-size: var(--font-size-large-mobile);
+  }
+
+  .title {
+    font-size: var(--font-size-medium-mobile);
+  }
+}

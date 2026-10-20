@@ -58,10 +58,23 @@
   .wrapper {
     max-width: 100%;
   }
+
+  .title {
+    font-size: var(--font-size-large-mobile);
+  }
 }
 
 @media screen and (max-width: 37.5em) {
   .form {
     grid-template-columns: 1fr;
+  }
+
+  .box {
+    display: flex;
+  }
+
+  .submit {
+    flex: 1;
+    justify-content: center;
   }
 }

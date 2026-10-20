@@ -10,5 +10,12 @@
 }
 
 .highlight {
-  /* color: var(--highlight); */
+  color: var(--highlight);
+  font-weight: var(--font-weight-light-bold);
+}
+
+@media screen and (max-width: 50rem) {
+  .title {
+    font-size: var(--font-size-large-mobile);
+  }
 }

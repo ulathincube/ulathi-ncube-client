@@ -15,3 +15,9 @@
 .logo {
   font-size: var(--font-size-large);
 }
+
+@media screen and (max-width: 50rem) {
+  .logo {
+    font-size: var(--font-size-large-mobile);
+  }
+}
