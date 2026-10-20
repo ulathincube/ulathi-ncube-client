@@ -8,6 +8,7 @@ function Articles() {
   const { isPending, isError, error, data } = useQuery({
     queryKey: ["allArticles"],
     queryFn: getAllArticles,
+    retry: 3,
   })
 
   if (isPending) return <ArticlesSkeleton />
