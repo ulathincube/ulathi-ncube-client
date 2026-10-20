@@ -24,6 +24,8 @@
   --animation-duration-exit: 250ms;
   --text-width: 60ch;
 
+  --icon-medium: 48px;
+
   --body-color: hsl(220deg 15% 97%);
   --text-color-main: hsl(220deg 20% 10%);
   --text-color-normal: hsl(220deg 20% 25%);
