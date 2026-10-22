@@ -13,7 +13,7 @@ function Articles() {
   })
 
   if (isPending) return <ArticlesSkeleton />
-  if (isError) return <Error />
+  if (isError && error) return <Error />
 
   return (
     <section className={styles.wrapper}>
