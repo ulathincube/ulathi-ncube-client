@@ -50,17 +50,17 @@ function Projects() {
         <Project
           name="Socket-Social"
           bio="A social media application with instant messaging implemented using websockets"
-          link="https://odin-book-iu27.onrender.com/login"
+          link="https://odin-book-iu27.onrender.com/"
         />
         <Project
           name="File Uploader"
           bio="A file upload service for storing files on an online storage service."
-          link="https://google.com"
+          link="https://file-upload-client-caqs.onrender.com/"
         />
         <Project
           name="Message-Me"
           bio="A simple messaging client for chatting with random users on the internet and find new friends"
-          link="https://google.com"
+          link="https://messaging-client.onrender.com/"
         />
       </ul>
     </section>
