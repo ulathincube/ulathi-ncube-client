@@ -48,9 +48,9 @@ function Projects() {
       </article>
       <ul className={styles.projects}>
         <Project
-          name="Odin Book"
+          name="Socket-Social"
           bio="A social media application with instant messaging implemented using websockets"
-          link="https://google.com"
+          link="https://odin-book-iu27.onrender.com/login"
         />
         <Project
           name="File Uploader"
