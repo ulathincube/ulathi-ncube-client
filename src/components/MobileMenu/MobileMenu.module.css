@@ -16,6 +16,7 @@
   flex: 1;
   font-size: var(--font-size-medium);
   background-color: var(--body-color);
+  padding: var(--spacing-25) 0;
 }
 
 .list {
@@ -27,10 +28,19 @@
 
 .link {
   font-weight: var(--font-weight-light-bold);
+  display: flex;
+  gap: var(--spacing-10);
+  align-items: center;
+  width: fit-content;
 }
 
 .link:link,
 .link:visited {
   color: inherit;
   text-decoration: none;
+}
+
+.icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
 }
