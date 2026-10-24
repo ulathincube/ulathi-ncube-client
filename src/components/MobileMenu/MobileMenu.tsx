@@ -17,18 +17,18 @@ function MobileMenu() {
                 </Link>
               </li>
               <li className={styles.item}>
-                <Link to="/" className={styles.link}>
-                  Home
+                <Link to="/blog" className={styles.link}>
+                  Blog
                 </Link>
               </li>
               <li className={styles.item}>
-                <Link to="/" className={styles.link}>
-                  Home
+                <Link to="/portfolio" className={styles.link}>
+                  Portfolio
                 </Link>
               </li>
               <li className={styles.item}>
-                <Link to="/" className={styles.link}>
-                  Home
+                <Link to="/contact" className={styles.link}>
+                  Contact
                 </Link>
               </li>
             </ul>
