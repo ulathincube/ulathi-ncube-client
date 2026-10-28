@@ -25,7 +25,7 @@
 .title {
   text-transform: uppercase;
   font-size: var(--font-size-default);
-  font-weight: var(--font-weight-light-bold);
+  font-weight: var(--font-weight-bold);
 }
 
 .item {
