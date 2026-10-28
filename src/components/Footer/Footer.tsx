@@ -12,12 +12,12 @@ function Footer() {
             <h3 className={styles.title}>Working on</h3>
             <ul className={styles.list}>
               <li className={styles.item}>
-                <Link to="/" className={styles.link}>
+                <Link to="/blog" className={styles.link}>
                   Blog
                 </Link>
               </li>
               <li className={styles.item}>
-                <Link to="/" className={styles.link}>
+                <Link to="/portfolio" className={styles.link}>
                   Portfolio
                 </Link>
               </li>
@@ -27,12 +27,12 @@ function Footer() {
             <h3 className={styles.title}>General</h3>
             <ul className={styles.list}>
               <li className={styles.item}>
-                <Link to="/" className={styles.link}>
+                <Link to="/about" className={styles.link}>
                   About
                 </Link>
               </li>
               <li className={styles.item}>
-                <Link to="/" className={styles.link}>
+                <Link to="/contact" className={styles.link}>
                   Contact
                 </Link>
               </li>
