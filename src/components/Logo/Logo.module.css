@@ -17,11 +17,12 @@
 }
 
 .logo {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
 }
 
 @media screen and (max-width: 50rem) {
   .logo {
-    font-size: var(--font-size-large-mobile);
+    font-size: var(--font-size-medium-mobile);
   }
 }
