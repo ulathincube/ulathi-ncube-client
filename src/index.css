@@ -77,3 +77,10 @@ h6 {
   font-weight: var(--font-size-default);
   color: var(--text-color-main);
 }
+
+@media screen and (max-width: 37.5rem) {
+  #root,
+  #modal {
+    gap: var(--spacing-25);
+  }
+}
