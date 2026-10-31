@@ -35,6 +35,10 @@
   --action-text-color: hsl(220deg 20% 95%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;
