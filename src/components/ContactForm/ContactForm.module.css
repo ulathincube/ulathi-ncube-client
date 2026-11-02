@@ -38,6 +38,10 @@
   resize: none;
 }
 
+.field:focus {
+  outline-color: var(--highlight);
+}
+
 .field,
 .submit {
   border-radius: var(--border-radius-5);
