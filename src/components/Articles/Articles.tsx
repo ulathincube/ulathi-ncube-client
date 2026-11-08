@@ -19,9 +19,10 @@ function Articles() {
     <section className={styles.wrapper}>
       <h1 className={styles.title}>Articles</h1>
       <ul className={styles.articles}>
-        {data.data.map((article) => (
-          <Article key={article.id} article={article} />
-        ))}
+        {data.data &&
+          data.data.map((article) => (
+            <Article key={article.id} article={article} />
+          ))}
       </ul>
       <article className={styles.box}>
         <button className={styles.fetch}>Show More</button>
