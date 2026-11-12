@@ -2,10 +2,15 @@ import styles from "./Header.module.css"
 import { Link } from "react-router"
 import Logo from "../Logo"
 import MenuIcon from "../MenuIcon"
+import { motion } from "motion/react"
 
 function Header() {
   return (
-    <header className={styles.header}>
+    <motion.header
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className={styles.header}
+    >
       <Logo />
       <nav className={styles.navigation}>
         <ul className={styles.links}>
@@ -22,7 +27,7 @@ function Header() {
         </ul>
       </nav>
       <MenuIcon />
-    </header>
+    </motion.header>
   )
 }
 

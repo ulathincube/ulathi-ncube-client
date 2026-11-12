@@ -1,8 +1,13 @@
 import styles from "./Hero.module.css"
+import { motion } from "motion/react"
 
 function Hero() {
   return (
-    <section className={styles.hero}>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className={styles.hero}
+    >
       <h1 className={styles.title}>Hello, I'm Ulathi</h1>
       <p className={styles.bio}>
         I'm a FullStack Developer, with{" "}
@@ -11,7 +16,7 @@ function Hero() {
         things that have to do with programming, computers and databases. I use
         Postgres a lot, and yes did I say I love programming?
       </p>
-    </section>
+    </motion.section>
   )
 }
 

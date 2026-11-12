@@ -1,10 +1,15 @@
 import styles from "./Footer.module.css"
 import Logo from "../Logo"
 import { Link } from "react-router"
+import { motion } from "motion/react"
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
+    <motion.footer
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className={styles.footer}
+    >
       <Logo />
       <nav className={styles.navigation}>
         <ul className={styles.links}>
@@ -40,7 +45,7 @@ function Footer() {
           </li>
         </ul>
       </nav>
-    </footer>
+    </motion.footer>
   )
 }
 

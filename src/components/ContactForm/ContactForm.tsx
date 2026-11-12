@@ -1,6 +1,7 @@
 import styles from "./ContactForm.module.css"
 import { useState } from "react"
 import { createClient } from "../../services/client"
+import { motion } from "motion/react"
 
 function ContactForm() {
   const [name, setName] = useState<string>("")
@@ -33,7 +34,11 @@ function ContactForm() {
   }
 
   return (
-    <section className={styles.wrapper}>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className={styles.wrapper}
+    >
       <h5 className={styles.title}>Get in Touch</h5>
       <form onSubmit={onFormSubmit} className={styles.form}>
         <div className={styles.group}>
@@ -102,7 +107,7 @@ function ContactForm() {
           </figure>
         </div>
       </form>
-    </section>
+    </motion.section>
   )
 }
 

@@ -1,5 +1,6 @@
 import styles from "./Projects.module.css"
 import { Link } from "react-router"
+import { motion } from "motion/react"
 
 interface ProjectProps {
   name: string
@@ -42,7 +43,11 @@ function Project({ name, bio, link }: ProjectProps) {
 
 function Projects() {
   return (
-    <section className={styles.portfolio}>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className={styles.portfolio}
+    >
       <article className={styles.info}>
         <h3 className={styles.heading}>Portfolio</h3>
       </article>
@@ -63,7 +68,7 @@ function Projects() {
           link="https://messaging-client.onrender.com/"
         />
       </ul>
-    </section>
+    </motion.section>
   )
 }
 
