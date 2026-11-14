@@ -1,8 +1,13 @@
 import styles from "./Error.module.css"
+import { motion } from "motion/react"
 
 function Error() {
   return (
-    <main className={styles.wrapper}>
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className={styles.wrapper}
+    >
       <div className={styles.box}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +53,7 @@ function Error() {
           </button>
         </div>
       </div>
-    </main>
+    </motion.main>
   )
 }
 

@@ -2,12 +2,17 @@ import styles from "./NotFound.module.css"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import { Link } from "react-router"
+import { motion } from "motion/react"
 
 function NotFound() {
   return (
     <>
       <Header />
-      <main className={styles.wrapper}>
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className={styles.wrapper}
+      >
         <div className={styles.box}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +57,7 @@ function NotFound() {
             </Link>
           </div>
         </div>
-      </main>
+      </motion.main>
       <Footer />
     </>
   )

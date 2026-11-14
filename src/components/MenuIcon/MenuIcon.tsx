@@ -1,6 +1,7 @@
 import styles from "./MenuIcon.module.css"
 import MobileMenu from "../MobileMenu"
 import { useState, useEffect } from "react"
+import { motion } from "motion/react"
 
 const container: HTMLElement = document.querySelector("#modal")!
 
@@ -43,7 +44,9 @@ function MenuIcon() {
 
   return (
     <>
-      <button
+      <motion.button
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         onClick={showMenu ? onHideMenu : onShowMenu}
         className={styles.wrapper}
       >
@@ -82,7 +85,7 @@ function MenuIcon() {
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         )}
-      </button>
+      </motion.button>
       {showMenu && <MobileMenu />}
     </>
   )

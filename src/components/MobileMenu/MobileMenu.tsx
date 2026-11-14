@@ -1,12 +1,17 @@
 import styles from "./MobileMenu.module.css"
 import { Link } from "react-router"
 import { createPortal } from "react-dom"
+import { motion } from "motion/react"
 
 const container: HTMLElement = document.querySelector("#modal")!
 
 function MobileMenu() {
   return createPortal(
-    <main className={styles.wrapper}>
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className={styles.wrapper}
+    >
       <div className={styles.overlay}>
         <article className={styles.modal}>
           <nav className={styles.navigation}>
@@ -106,7 +111,7 @@ function MobileMenu() {
           </nav>
         </article>
       </div>
-    </main>,
+    </motion.main>,
     container
   )
 }
