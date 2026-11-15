@@ -23,9 +23,9 @@
 }
 
 .title {
-  text-transform: uppercase;
-  font-size: var(--font-size-default);
-  font-weight: var(--font-weight-bold);
+  /* font-size: var(--font-size-default); */
+  font-weight: var(--font-weight-light-bold);
+  font-size: var(--font-size-medium);
 }
 
 .item {
@@ -64,6 +64,10 @@
   .footer {
     flex-direction: column;
     gap: var(--spacing-10);
+  }
+
+  .title {
+    font-size: var(--font-size-default);
   }
 
   .navigation {

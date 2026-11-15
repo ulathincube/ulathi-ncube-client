@@ -22,7 +22,7 @@
 
 .logo {
   font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-light-bold);
 }
 
 @media screen and (max-width: 50rem) {
