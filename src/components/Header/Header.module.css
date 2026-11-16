@@ -13,7 +13,7 @@
   list-style: none;
   font-size: var(--font-size-medium);
   display: flex;
-  gap: var(--spacing-15);
+  gap: var(--spacing-20);
 }
 
 .link:link,
