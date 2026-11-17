@@ -14,7 +14,7 @@ function Footer() {
       <nav className={styles.navigation}>
         <ul className={styles.links}>
           <li className={styles.item}>
-            <h3 className={styles.title}>Working on</h3>
+            <h3 className={styles.title}>Projects</h3>
             <ul className={styles.list}>
               <li className={styles.item}>
                 <Link to="/blog" className={styles.link}>
