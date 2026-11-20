@@ -1,0 +1,11 @@
+.wrapper {
+	display: flex;
+	border-radius: var(--border-radius-small);
+	background-color: var(--theme-color);
+	color: var(--white);
+}
+
+.heading {
+	color: inherit;
+	font-size: var(--font-size-default);
+}
