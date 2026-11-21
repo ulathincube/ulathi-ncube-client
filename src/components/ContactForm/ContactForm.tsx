@@ -2,11 +2,13 @@ import styles from "./ContactForm.module.css"
 import { useState } from "react"
 import { createClient } from "../../services/client"
 import { motion } from "motion/react"
+import useToastMessage from "../../hooks/useToastMessage"
 
 function ContactForm() {
   const [name, setName] = useState<string>("")
   const [email, setEmail] = useState<string>("")
   const [message, setMessage] = useState<string>("")
+  const { onSetMessage } = useToastMessage()
 
   const onNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value)
@@ -26,6 +28,7 @@ function ContactForm() {
     try {
       const result = await createClient({ name, email, message })
       console.log({ result })
+      onSetMessage("Email sent successfully")
     } catch (error: unknown) {
       if (error instanceof Error) {
         console.log({ error })
