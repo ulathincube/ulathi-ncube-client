@@ -9,8 +9,6 @@ const container: HTMLElement = document.getElementById("notifications")!
 function Toast() {
   const { message } = useToastMessage()
 
-  console.log(message && "I'm showing")
-
   useEffect(() => {
     if (message.length > 0) {
       container.style.display = "flex"
