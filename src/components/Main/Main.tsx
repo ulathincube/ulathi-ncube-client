@@ -1,6 +1,15 @@
 import styles from "./Main.module.css"
 import Articles from "../Articles/"
 import { motion } from "motion/react"
+import ErrorBoundary from "../ErrorBoundary"
+
+function ErrorFallback() {
+  return (
+    <div className={styles.container}>
+      <h3 className={styles.heading}>Unable to fetch articles</h3>
+    </div>
+  )
+}
 
 function Main() {
   return (
@@ -9,7 +18,9 @@ function Main() {
       animate={{ opacity: 1 }}
       className={styles.wrapper}
     >
-      <Articles />
+      <ErrorBoundary fallback={<ErrorFallback />}>
+        <Articles />
+      </ErrorBoundary>
     </motion.main>
   )
 }
